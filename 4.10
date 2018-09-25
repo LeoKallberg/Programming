@@ -1,0 +1,22 @@
+tweet = input('Enter abbreviation from tweet:\n')
+Abbrev = {
+    'LOL': 'laughing out loud',
+    'BFN': 'bye for now',
+    'FTW': 'for the win',
+    'IRL': 'in real life',
+    'WTF': 'whens the foxtrot',
+    'THX': 'thank you',
+    'TTYL': 'talk to you later',
+    'BRB': 'be right back',
+    'AFK': 'away from keyboard'
+   }
+if tweet in Abbrev:
+    print(tweet,'=', Abbrev[tweet])
+else:
+    print("Sorry, don't know that one")
+
+tweet_chat = input('Enter tweet 160 characters or less')
+if len(tweet_chat) > 160:
+    print('Error! Only 160 or less characters allowed!')
+else:
+    print('\nGood Job')
